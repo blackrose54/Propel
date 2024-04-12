@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 export default function Home() {
   return (
     <main className="pt-4">
+      
       <div className=" px-4 h-full">
         <p className=" text-3xl mb-4">Recent Projects</p>
         <div className=" md:grid md:grid-flow-col gap-4 pb-8 max-sm:space-y-4">

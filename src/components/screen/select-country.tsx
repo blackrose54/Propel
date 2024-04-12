@@ -37,11 +37,11 @@ export function SelectCountry({setdone}:props) {
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Fruits</SelectLabel>
-              <SelectItem value="apple">Apple</SelectItem>
-              <SelectItem value="banana">Banana</SelectItem>
-              <SelectItem value="blueberry">Blueberry</SelectItem>
-              <SelectItem value="grapes">Grapes</SelectItem>
-              <SelectItem value="pineapple">Pineapple</SelectItem>
+              <SelectItem value="apple">Australia</SelectItem>
+              <SelectItem value="banana">India</SelectItem>
+              <SelectItem value="blueberry">United Kingdom</SelectItem>
+              <SelectItem value="grapes">Brazil</SelectItem>
+              <SelectItem value="pineapple">Argentina</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>

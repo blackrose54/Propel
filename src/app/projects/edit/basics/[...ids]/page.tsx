@@ -56,7 +56,7 @@ export default function Basics() {
       {/* project category */}
       <div className=" p-12 border-b-2 flex items-center gap-x-8">
         <div className=" space-y-2 w-[50%] pr-20">
-          <h1 className=" text-2xl">Project Title</h1>
+          <h1 className=" text-2xl">Project Category5 </h1>
           <p className=" text-muted-foreground">
             Choose a primary category and subcategory to help backers find your
             project.

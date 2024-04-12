@@ -1,6 +1,10 @@
+'use client'
+
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 type props = {
   params: {
@@ -33,8 +37,10 @@ const projectdetails = {
     Risks post-funding period are related to business launch. Funding for a new business comes from many sources, and this kickstarter is just one of those sources. The team will work vigorously to get the brewery up and running as soon as possible, but obstacles outside of the control of the Fable team might result in delay/blockage of launch. We thank you for your help in making this brewery come to life!`,
 };
 export default function Project({ params }: props) {
+
+  const [value,setvalue] = useState<string>("a");
   return (
-    <section className=" bg-secondary">
+    <section className="">
       <div className=" text-center p-12 space-y-2">
         <h1 className=" text-4xl font-bold">{projectdetails.title}</h1>
         <p className=" text-muted-foreground">{projectdetails.description}</p>
@@ -68,9 +74,10 @@ export default function Project({ params }: props) {
             <p className=" text-muted-foreground">days to go</p>
           </div>
 
-          <div className=" space-y-2">
-            <Link href={`/checkouts/payments/new/${params.ids[0]}/${params.ids[1]}`}>
-            <Button className=" w-full">Back this project</Button>
+          <div className=" space-y-4">
+            <Input value={value} onChange={(e)=>setvalue(e.target.value)} type="text" name="amount" className=" mb-4 " placeholder=" enter amount to pledge" />
+            <Link href={`/projects/rewards/${params.ids[0]}/${params.ids[1]}`}>
+              <Button className=" w-full">Back this project</Button>
             </Link>
             <p className=" text-sm ">
               All or nothing. This project will only be funded if it reaches its
@@ -89,7 +96,6 @@ export default function Project({ params }: props) {
         <h1 className="  text-4xl">Risks & Chanllenges</h1>
         <p>{projectdetails.risk}</p>
       </div>
-
     </section>
   );
 }

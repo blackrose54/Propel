@@ -27,29 +27,29 @@ export function SelectCategories({setdone}:props) {
       <div className="max-sm:space-y-4 md:flex items-center justify-between md:gap-x-12">
         <Select>
           <SelectTrigger className="">
-            <SelectValue placeholder="Select a fruit" />
+            <SelectValue placeholder="Select a category" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Fruits</SelectLabel>
-              <SelectItem value="apple">Apple</SelectItem>
-              <SelectItem value="banana">Banana</SelectItem>
-              <SelectItem value="blueberry">Blueberry</SelectItem>
-              <SelectItem value="grapes">Grapes</SelectItem>
-              <SelectItem value="pineapple">Pineapple</SelectItem>
+              <SelectItem value="apple">Games</SelectItem>
+              <SelectItem value="banana">Food</SelectItem>
+              <SelectItem value="blueberry">Music</SelectItem>
+              <SelectItem value="grapes">Photography</SelectItem>
+              <SelectItem value="pineapple">Technology</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>
         <Select>
           <SelectTrigger className="">
-            <SelectValue placeholder="Select a fruit" />
+            <SelectValue placeholder="Select a subcategory" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Fruits</SelectLabel>
-              <SelectItem value="apple">Apple</SelectItem>
-              <SelectItem value="banana">Banana</SelectItem>
-              <SelectItem value="blueberry">Blueberry</SelectItem>
+              <SelectItem value="apple">Animals</SelectItem>
+              <SelectItem value="banana">Urban</SelectItem>
+              <SelectItem value="blueberry"></SelectItem>
               <SelectItem value="grapes">Grapes</SelectItem>
               <SelectItem value="pineapple">Pineapple</SelectItem>
             </SelectGroup>
