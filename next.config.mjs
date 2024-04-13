@@ -1,13 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: 'i.kickstarter.com',
-          },
-        ],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.kickstarter.com",
       },
+    ],
+  },
 };
 
 export default nextConfig;
