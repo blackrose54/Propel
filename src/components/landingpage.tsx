@@ -1,26 +1,24 @@
 import React from 'react'
+import { Button } from './ui/button'
 
 export const Landingpage = () => {
   return (
     <div className='w-full'>
      <section className="home1  w-full ">
 
-<div className="container grid  md:grid-cols-[30%_70%] items-center justify-center m-auto">
-  <div className="content  text-center w-[50%] m-auto  grid" >
+<div className="container py-12 items-center justify-center m-auto">
+  <div className="content space-y-8  text-center w-[50%] m-auto  " >
 
     <p className="text-3xl md:3.5xl lg:text-5xl font-serif">
    
-     find new and interasting projects with <span className='text-red-500'>Propel</span>
+     Find new and interesting projects with <span className='text-red-500'>Propel</span>
     </p>
     <br />
     <p className="text-0.5xl font-thin"> Explore all fashion brands and styles</p>
-
-    <a href={''} className="bg-black text-white rounded-xl mt-2 py-2 "><button >Connect with us</button></a>
+<br />
+    <a href={''} className="bg-black text-white rounded-xl mt-2 py-2 "><Button >Connect with us</Button></a>
   </div>
-  <div className="grid grid-cols-2 space-x-2 mt-4">
-    <img src="/l5.png" className="sm:w-600px" alt="" />
-    <img src="/l6.png" alt="" />
-  </div>
+  
 
 </div>
 </section>
